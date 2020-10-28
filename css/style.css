@@ -1,0 +1,20 @@
+body{margin:0;padding: 0;background:#ffeb3be0;font-family: consolas;position: absolute;width: 100%; height: 100%;overflow: hidden;}
+.wrapper{position: absolute;width: 100%; height: 100%;overflow: hidden;}
+.box div{position: absolute;width: 60px;height: 60px;background-color: #02acf98f;}
+.box div:nth-child(1){padding-top: 12%;left: 42%;animation: sizescale 10s linear infinite;}
+.box div:nth-child(2){padding-top: 70%;left: 50%;animation: sizescale 7s linear infinite;}
+.box div:nth-child(3){padding-top: 17%;left: 6%;animation: sizescale 9s linear infinite;}
+.box div:nth-child(4){padding-top: 20%;left: 60%;animation: sizescale 10s linear infinite;}
+.box div:nth-child(5){padding-top: 67%;left: 10%;animation: sizescale 6s linear infinite;}
+.box div:nth-child(6){padding-top: 80%;left: 70%;animation: sizescale 12s linear infinite;}
+.box div:nth-child(7){padding-top: 60%;left: 80%;animation: sizescale 15s linear infinite;}
+.box div:nth-child(8){padding-top: 32%;left: 25%;animation: sizescale 16s linear infinite;}
+.box div:nth-child(9){padding-top: 90%;left: 25%;animation: sizescale 9s linear infinite;}
+.box div:nth-child(10){padding-top: 20%;left: 80%;animation: sizescale 15s linear infinite;}
+@keyframes sizescale {0%{transform: scale(0)translate(0)rotate(0);opacity: 0.5;}50%{transform: scale(1)translate(-50px)rotate(360deg);opacity: 0;ext-transform: uppercase;}80%{transform: scale(0)translate(0)rotate(0);opacity: 0.6;}100%{transform: scale(0)translate(0)rotate(0);opacity: 0.6;}}
+.wavy{display: flex;justify-content: center;align-items: center;min-height: 100vh;position: relative;-webkit-box-reflect:below-12px linear-gradient(transparent,rgba(0,0,0,0.2));}
+.wavy span{position: relative;display: inline-block;color: #000;font-size: 2em;font-weight: bold;text-transform: uppercase;}
+.wavy2{position: absolute;top:80%;left: 50%;transform: translate(-50%,-50%);color: #000;font-size: 1em;font-weight: bold;text-transform: uppercase;}
+svg{width:400px; height: 400px;position: absolute;top:50%;left: 50%;transform: translate(-50%,-50%);}
+svg .draw{stroke: #02acf98f;stroke-width:4px;fill:transparent;stroke-dasharray: 4000;stroke-dashoffset:4000;animation: animate 10s forwards infinite;}
+@keyframes animate{to{stroke-dashoffset: 0;}}
